@@ -231,3 +231,35 @@ ul {
     background: url('../img/slider/3.jpg');
 }
 
+/*-----ABOUT-US-----*/
+.about-us {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/backgrounds/about-us.jpg');
+}
+
+.about-us-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+}
+
+.about-us-list-item {
+    width: 230px;
+}
+
+.about-us-list-item div, .about-us-list-item h3, .about-us-list-item p  {
+    color: #ffffff;
+}
+
+.about-us-list-item  div {
+    background: #ffffff;
+    width: 140px;
+    height: 140px;
+
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
