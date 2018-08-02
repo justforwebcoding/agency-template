@@ -145,10 +145,17 @@ ul {
 }
 
 .what-we-do-h2 {
+    margin: 0;
     text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+
     font-size: 48px;
     line-height: 36px;
 }
+
 
 .what-we-do-list-item {
     display: flex;
@@ -263,3 +270,39 @@ ul {
     border-radius: 50%;
 }
 
+.about-us-h2 {
+    margin: 0;
+    text-align: center;
+
+    padding-top: 100px;
+
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 36px;
+}
+
+.about-us-p {
+    color: #c9c9c9;
+    width: 660px;
+    margin: 40px auto 130px auto;
+    text-align: center;
+}
+
+.about-us-btn {
+    margin: 50px 0px 0px 550px
+}
+
+/*Google map*/
+
+#google-map{
+    overflow:hidden;
+    position:relative;
+    height:600px;
+}
+#google-map iframe{
+    left:0;
+    top:0;
+    height: 600px;
+    width:100%;
+    position:absolute;
+}
