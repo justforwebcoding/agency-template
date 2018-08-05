@@ -14,6 +14,10 @@ ul {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 /*-----INTRO-------*/
 #intro {
     height: 100vh;
@@ -220,36 +224,81 @@ ul {
 }
 
 
-/*------OUR-WORKS-------*/
-.our-works-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*------Slider-------*/
+
+.slider {
+    margin-top: 100px;
 }
 
-.our-works-slider-item:nth-child(1) {
-    width: 33.3%;
-    height: 485px;
-    background: url('../img/slider/1.jpg');
+.slider ul {
+    overflow: hidden;
 }
 
-.our-works-slider-item:nth-child(2) {
-    width: 33.3%;
-    height: 485px;
-    background: url('../img/slider/2.jpg');
+.slider li {
+    position: relative;
+    float: left;
+    width: calc(100vw/3);
+
+    text-align: center;
+
 }
 
-.our-works-slider-item:nth-child(3) {
-    width: 33.3%;
-    height: 485px;
-    background: url('../img/slider/3.jpg');
+.slider li:hover .hover-block {
+    display: block;
 }
+
+.slider li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider .hover-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, .63);
+    color: #fff;
+}
+
+.slider .hover-wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .table-cell-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slider h4 {
+    margin-bottom: 20px;
+    font: 30px "ProximaBold", sans-serif;
+
+    color: #ffffff;
+}
+
+.slider p {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+
 
 /*-----ABOUT-US-----*/
 .about-us {
     width: 100%;
-    height: 100vh;
-    background: url('../img/backgrounds/about-us.jpg');
+
+    background: url('../img/backgrounds/about-us.jpg') 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
 }
 
 .about-us-list {
@@ -296,20 +345,11 @@ ul {
 }
 
 .about-us-btn {
-    margin: 50px 0px 0px 550px
+    margin: 100px 0px 100px 550px
 }
 
 /*Google map*/
-
-#google-map{
-    overflow:hidden;
-    position:relative;
-    height:600px;
-}
-#google-map iframe{
-    left:0;
-    top:0;
-    height: 600px;
-    width:100%;
-    position:absolute;
+#map iframe{
+    width: 100%;
+    min-height: 600px;
 }
